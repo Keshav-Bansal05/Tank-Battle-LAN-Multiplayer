@@ -1,6 +1,6 @@
-# 🎮 Tank Battle Simulation
+# 🎮 Tank Battle LAN Multiplayer
 
-![Tank Battle Simulation](https://img.shields.io/badge/Tank%20Battle-Simulation-brightgreen)
+![Tank Battle LAN Multiplayer](https://img.shields.io/badge/Tank%20Battle-LAN%20Multiplayer-brightgreen)
 ![LAN Multiplayer](https://img.shields.io/badge/LAN%20Multiplayer-Supported-blue)
 ![C++](https://img.shields.io/badge/C%2B%2B-17-blue)
 ![OpenGL](https://img.shields.io/badge/OpenGL-4.5-red)
@@ -16,7 +16,11 @@ computer graphics, UDP networking, LAN multiplayer, game physics, tank combat,
 third-person camera, retro UI, game project, C++ project, OpenGL project
 -->
 
-A high-performance 3D tank battle simulation game with **LAN Multiplayer Support**. Built with C++, OpenGL, and freeglut, this game lets you battle friends over local network in exciting tank combat. Features realistic physics, immersive 3D graphics, and a third-person camera view for an engaging multiplayer experience.
+A high-performance 3D tank battle game with **LAN Multiplayer** as its core feature. Built with C++, OpenGL, and freeglut, this game lets you battle friends over local network in exciting tank combat. Features realistic physics, immersive 3D graphics, and a third-person camera view for an engaging multiplayer experience.
+
+<p align="center">
+  <img src="screenshots/gameplay.jpg" alt="Tank Battle Gameplay" width="600"/>
+</p>
 
 ## 📋 Table of Contents
 
@@ -32,10 +36,6 @@ A high-performance 3D tank battle simulation game with **LAN Multiplayer Support
 - [License](#-license)
 - [Acknowledgements](#-acknowledgements)
 - [Contact](#-contact)
-
-<p align="center">
-  <img src="screenshots/gameplay.jpg" alt="Tank Battle Gameplay" width="600"/>
-</p>
 
 <!--
 NOTE: Uncomment these sections after adding your gameplay GIF and YouTube video
@@ -156,8 +156,8 @@ NOTE: Uncomment these sections after adding your gameplay GIF and YouTube video
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Keshav-Bansal05/Tank-Battle-Simulation.git
-cd Tank-Battle-Simulation
+git clone https://github.com/Keshav-Bansal05/Tank-Battle-LAN-Multiplayer.git
+cd Tank-Battle-LAN-Multiplayer
 ```
 
 2. Compile the project:
@@ -204,7 +204,7 @@ Play with friends on your local network in just a few simple steps!
 ## 🧩 Project Structure
 
 ```
-tank-battle-simulation/
+Tank-Battle-LAN-Multiplayer/
 ├── EnhancedTankGame.cpp    # Main game file
 ├── NetworkManager.h        # Networking header
 ├── NetworkManager.cpp      # Networking implementation

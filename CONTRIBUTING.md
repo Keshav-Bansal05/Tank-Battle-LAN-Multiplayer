@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to the Tank Battle Simulation project! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to the Tank Battle LAN Multiplayer project! This document provides guidelines and instructions for contributing.
 
 ## Contact
 
@@ -72,7 +72,7 @@ g++ -o EnhancedTankGame.exe EnhancedTankGame.cpp NetworkManager.cpp -lopengl32 -
 
 By contributing to this project, you agree that your contributions will be licensed under the project's MIT License.
 
-Thank you for contributing to Tank Battle Simulation!
+Thank you for contributing to Tank Battle LAN Multiplayer!
 
 ---
 
