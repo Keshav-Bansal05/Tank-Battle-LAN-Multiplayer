@@ -1,0 +1,78 @@
+# Tank Battle Simulation Functions
+
+## Main Program Functions
+
+1. `WinMain` - Entry point of the application that initializes the window and game loop.
+2. `WndProc` - Windows procedure function that handles window messages and user input.
+3. `EnableOpenGL` - Sets up the OpenGL rendering context for the window.
+4. `DisableOpenGL` - Cleans up the OpenGL rendering context when closing the application.
+5. `InitGame` - Initializes game objects, variables, and settings at startup.
+6. `UpdateGame` - Updates game state, physics, and logic each frame.
+7. `RenderGame` - Renders all game objects, UI elements, and effects to the screen.
+8. `ResizeWindow` - Handles window resizing and updates the viewport accordingly.
+9. `ToggleFullscreen` - Switches between fullscreen and windowed mode.
+10. `ResetGame` - Resets the game state after a game over or when requested.
+
+## Drawing Functions
+
+11. `DrawTank` - Renders a tank model with all its components (body, turret, tracks, etc.).
+12. `DrawBullets` - Renders all active bullets in the game world.
+13. `DrawParticles` - Renders particle effects like explosions, smoke, and muzzle flashes.
+14. `DrawTerrain` - Renders the terrain with height mapping and environmental objects.
+15. `DrawHUD` - Renders the heads-up display with health bars, minimap, and crosshair.
+16. `DrawNetworkMenu` - Renders the network menu interface for multiplayer options.
+17. `DrawGameOverScreen` - Renders the game over screen showing win/lose status and retry button.
+18. `DrawText` - Renders text on the screen using the custom text rendering system.
+19. `DrawSimpleText` - Simplified version of DrawText for basic text rendering.
+20. `DrawCharacter` - Renders a single character using OpenGL primitives in a retro style.
+
+## Game Mechanics Functions
+
+21. `FireBullet` - Creates a new bullet when the player fires the tank's cannon.
+22. `CreateExplosion` - Generates particle effects for explosions when bullets hit targets.
+23. `CreateMuzzleFlash` - Generates particle effects for the muzzle flash when firing.
+24. `UpdateCamera` - Updates the third-person camera position and orientation.
+25. `UpdateParticles` - Updates particle positions, lifetimes, and properties.
+26. `CheckCollision` - Checks for collisions between game objects (tanks, bullets, terrain).
+
+## Networking Functions
+
+27. `InitializeNetworking` - Sets up the networking system and callbacks.
+28. `StartServer` - Starts a server for hosting a multiplayer game.
+29. `ConnectToServer` - Connects to a remote server as a client.
+30. `DisconnectFromNetwork` - Disconnects from the current network session.
+31. `SendTankState` - Sends the local tank's state to the remote player.
+32. `SendBulletFired` - Sends bullet information when the local player fires.
+33. `HandleNetworkMessage` - Processes incoming network messages from the remote player.
+34. `HandleConnect` - Handles successful connection events.
+35. `HandleDisconnect` - Handles disconnection events.
+36. `UpdateNetworking` - Updates network state and sends periodic updates.
+
+## NetworkManager Class Functions
+
+37. `NetworkManager::Initialize` - Initializes the Winsock library for networking.
+38. `NetworkManager::Cleanup` - Cleans up the Winsock library resources.
+39. `NetworkManager::NetworkManager` - Constructor that initializes network manager variables.
+40. `NetworkManager::~NetworkManager` - Destructor that cleans up network resources.
+41. `NetworkManager::StartServer` - Creates and binds a UDP socket for hosting a game.
+42. `NetworkManager::ConnectToServer` - Creates a socket and connects to a remote server.
+43. `NetworkManager::SendData` - Sends raw data to the connected peer.
+44. `NetworkManager::SendMessage` - Sends a formatted message with a specific type.
+45. `NetworkManager::SendTextMessage` - Sends a chat message to the remote player.
+46. `NetworkManager::SendTankState` - Sends tank position and rotation data.
+47. `NetworkManager::SendBulletFired` - Sends bullet creation data.
+48. `NetworkManager::SendBulletHit` - Sends bullet hit notification and damage data.
+49. `NetworkManager::SendGameState` - Sends game state updates (win/lose conditions).
+50. `NetworkManager::SendGameReset` - Sends game reset request.
+51. `NetworkManager::ReceiveThread` - Background thread that receives network messages.
+52. `NetworkManager::ThreadProc` - Static thread entry point function.
+53. `NetworkManager::IsConnected` - Checks if connected to a remote player.
+54. `NetworkManager::IsServer` - Checks if running as a server or client.
+55. `NetworkManager::GetPeerAddress` - Gets the IP address of the connected peer.
+
+## Utility Functions
+
+56. `glutSolidCube` - Custom implementation of GLUT's solid cube drawing function.
+57. `glutSolidSphere` - Custom implementation of GLUT's solid sphere drawing function.
+58. `Terrain::getHeight` - Gets the terrain height at a specific world position.
+59. `Terrain::generateTerrainObjects` - Generates environmental objects on the terrain.
