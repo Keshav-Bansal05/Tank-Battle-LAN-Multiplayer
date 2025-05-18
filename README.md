@@ -1,13 +1,37 @@
 # 🎮 Tank Battle Simulation
 
 ![Tank Battle Simulation](https://img.shields.io/badge/Tank%20Battle-Simulation-brightgreen)
+![LAN Multiplayer](https://img.shields.io/badge/LAN%20Multiplayer-Supported-blue)
 ![C++](https://img.shields.io/badge/C%2B%2B-17-blue)
 ![OpenGL](https://img.shields.io/badge/OpenGL-4.5-red)
 ![freeglut](https://img.shields.io/badge/freeglut-3.2.1-orange)
-![Multiplayer](https://img.shields.io/badge/Multiplayer-UDP-blueviolet)
+![UDP Networking](https://img.shields.io/badge/Networking-UDP-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A high-performance 3D tank battle simulation game built with C++, OpenGL, and freeglut. Experience intense tank combat with realistic physics, multiplayer functionality, and immersive visual effects.
+<!-- SEO Keywords -->
+<!--
+tank game, 3D game, C++ game, OpenGL game, tank simulation, tank battle, multiplayer game,
+game development, 3D graphics, particle effects, physics simulation, game programming,
+computer graphics, UDP networking, LAN multiplayer, game physics, tank combat,
+third-person camera, retro UI, game project, C++ project, OpenGL project
+-->
+
+A high-performance 3D tank battle simulation game with **LAN Multiplayer Support**. Built with C++, OpenGL, and freeglut, this game lets you battle friends over local network in exciting tank combat. Features realistic physics, immersive 3D graphics, and a third-person camera view for an engaging multiplayer experience.
+
+## 📋 Table of Contents
+
+- [Features](#-features)
+- [Controls](#-controls)
+- [Screenshots](#-screenshots)
+- [Technical Implementation](#-technical-implementation)
+- [Requirements](#-requirements)
+- [Building and Running](#-building-and-running)
+- [Multiplayer Setup](#-multiplayer-setup)
+- [Project Structure](#-project-structure)
+- [Future Enhancements](#-future-enhancements)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
+- [Contact](#-contact)
 
 <p align="center">
   <img src="screenshots/gameplay.jpg" alt="Tank Battle Gameplay" width="600"/>
@@ -52,12 +76,14 @@ NOTE: Uncomment these sections after adding your gameplay GIF and YouTube video
 - **Environmental Objects**: Maneuver around trees, rocks, and other obstacles
 - **Collision Detection**: Realistic collision handling between tanks, projectiles, and terrain
 
-### 🎭 Multiplayer
+### 🎭 LAN Multiplayer
 
-- **LAN Multiplayer**: Connect with friends over local network for intense 1v1 battles
-- **UDP Networking**: Low-latency communication for responsive gameplay
-- **State Synchronization**: Seamless synchronization of tank positions, projectiles, and game events
-- **Chat System**: Communicate with your opponent during gameplay
+- **Real-time Tank Battles**: Challenge friends to intense 1v1 tank duels over your local network
+- **Low-Latency UDP Protocol**: Enjoy responsive, lag-free multiplayer combat with optimized networking
+- **Seamless Synchronization**: Experience perfectly synced tank movements, projectiles, and battle events
+- **In-Game Chat**: Communicate with your opponent during gameplay
+- **Easy Connection**: Simple server-client setup with minimal configuration
+- **Multiplayer Health System**: Damage tracking and health synchronization between players
 
 ### 🎬 Visual Effects
 
@@ -110,10 +136,12 @@ NOTE: Uncomment these sections after adding your gameplay GIF and YouTube video
 
 ### Networking
 
-- **UDP Protocol**: Fast, low-overhead networking for real-time gameplay
-- **Client-Server Architecture**: Reliable connection handling with server and client roles
-- **State Synchronization**: Efficient synchronization of game state between players
-- **Message System**: Robust message handling for game events and player actions
+- **LAN Multiplayer**: Dedicated networking system for local area network play
+- **UDP Protocol**: Fast, low-overhead communication for real-time gameplay with minimal latency
+- **Client-Server Architecture**: Reliable connection handling with flexible server and client roles
+- **State Synchronization**: Efficient synchronization of tank positions, rotations, and health
+- **Message System**: Robust message handling for game events, bullet firing, and hit detection
+- **Winsock Implementation**: Windows Socket API for reliable network communication
 
 ## 📋 Requirements
 
@@ -128,8 +156,8 @@ NOTE: Uncomment these sections after adding your gameplay GIF and YouTube video
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/tank-battle-simulation.git
-cd tank-battle-simulation
+git clone https://github.com/Keshav-Bansal05/Tank-Battle-Simulation.git
+cd Tank-Battle-Simulation
 ```
 
 2. Compile the project:
@@ -144,21 +172,34 @@ g++ -o EnhancedTankGame.exe EnhancedTankGame.cpp NetworkManager.cpp -lopengl32 -
 ./EnhancedTankGame.exe
 ```
 
-## 🔄 Multiplayer Setup
+## 🔄 LAN Multiplayer Setup
 
-### Hosting a Game
+Play with friends on your local network in just a few simple steps!
+
+### Hosting a Game (Server)
 
 1. Launch the game
 2. Press 'CTRL' to open the network menu
 3. Select "Start Server"
-4. Wait for a client to connect
+4. The game will display your IP address - share this with your friend
+5. Wait for your friend to connect
+6. Once connected, both players will enter the battle arena automatically
 
-### Joining a Game
+### Joining a Game (Client)
 
 1. Launch the game
 2. Press 'CTRL' to open the network menu
-3. Enter the host's IP address
+3. Enter the host's IP address in the input field
 4. Select "Connect to Server"
+5. Once connected, you'll automatically enter the battle arena
+
+### Multiplayer Tips
+
+- Ensure both computers are on the same local network
+- Disable firewalls or add exceptions if connection issues occur
+- Use the in-game chat (press T) to communicate with your opponent
+- Tank health is synchronized between players in real-time
+- When a tank is destroyed, the game displays the winner and offers a retry option
 
 ## 🧩 Project Structure
 
@@ -196,3 +237,18 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 <p align="center">
   <i>Developed with ❤️ by Keshav Bansal & Dhruv Aggarwal</i>
 </p>
+
+## 📬 Contact
+
+If you have any questions, suggestions, or would like to contribute to this project, feel free to reach out:
+
+### Keshav Bansal
+
+- **Email**: [bansalkeshav8888@gmail.com](mailto:bansalkeshav8888@gmail.com)
+- **GitHub**: [@Keshav-Bansal05](https://github.com/Keshav-Bansal05)
+- **LinkedIn**: [Keshav Bansal](https://www.linkedin.com/in/keshavbansal06)
+
+### Dhruv Aggarwal
+
+- **Email**: [dhruvngh2005@gmail.com](mailto:dhruvngh2005@gmail.com)
+- **LinkedIn**: [Dhruv Aggarwal](https://www.linkedin.com/in/dhruv-aggarwal-2149bb250)
